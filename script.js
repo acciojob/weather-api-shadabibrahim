@@ -26,7 +26,7 @@
 
 
 function get(){
-	const url=`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=65e6c064c2e37e1fc86b9fd9f7d9c701`;
+	const url=`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e467712b257e418838be97cc881a71de`;
 	fetch(url)
 	.then((response)=>response.json())
 	.then(data=>{
