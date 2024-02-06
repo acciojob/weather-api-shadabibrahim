@@ -10,7 +10,7 @@ let URL = "https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=65e
 // async function getCurrentWeather(){
 // 	let response = await fetch(URL);
 // 	let data  = await response.json();
-// 	p.innerHTML = `<p>Current weather in London: ${data.weather[0].main}</p>`;
+// 	div.innerHTML = `<p>Current weather in London: ${data.weather[0].main}</p>`;
 // 	div.appendChild(p);
 // }
 function getCurrentWeather(){
@@ -18,7 +18,7 @@ function getCurrentWeather(){
 	.then((res)=>res.json())
 	.then((data)=> {
 		console.log(data.weather[0].main)
-		p.innerHTML =`<p>Current weather in London: ${data.weather[0].main}</p>`
+		div.innerHTML =`<p>Current weather in London: ${data.weather[0].main}</p>`
 	})
 }
 btn.addEventListener('click',getCurrentWeather);
